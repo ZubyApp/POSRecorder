@@ -1,0 +1,7 @@
+    RewriteEngine On
+
+    RewriteCond %{LA-U:REQUEST_FILENAME} !-d
+    RewriteCond %{LA-U:REQUEST_FILENAME} !-f
+
+    RewriteRule ^ index.php [L]
+
